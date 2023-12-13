@@ -5,12 +5,16 @@ Is using https://github.com/ogxd/gxhash
 
 Run with:
 
+```
 cargo test -- --nocapture
+```
 
 Example output:
 
+```
 uuid: 904ebd40-74e9-4e23-84ea-517501e7abdb, hashed_uid: 14441696786189459178, len: 20, hash took: 288 ms, total took: 674 ms
 uuid: 904ebd40-74e9-4e23-84ea-517501e7abdb, gx_hashed_uid: 3782867463144427854, len: 20, hash took: 293 ms, total took: 676 ms
+```
 
 The program creates a uuid and has 3 helper functions:
 1. hash_uuid to hash a uuid with DefaultHasher
