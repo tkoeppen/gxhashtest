@@ -1,7 +1,7 @@
 # gxhashtest
 compare gxhash with DefaultHasher in Rust
 
-Is using https://github.com/ogxd/gxhash
+We want to test here GxHash (a non-cryptographic hashing algorithm) from Olivier Giniaux (published in September 2023) [1].
 
 Run with:
 
@@ -28,3 +28,5 @@ The first "took ms" number is the time spent for the hashing function and the to
 The goal of the function is, that we get a fixed length shorter uuid (similar what Google does).
 
 
+[1] https://github.com/ogxd/gxhash
+[2] https://www.reddit.com/r/rust/comments/17xgn0t/gxhash_a_new_extremely_fast_and_robust_hashing/?rdt=51749
