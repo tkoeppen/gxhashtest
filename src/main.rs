@@ -7,7 +7,7 @@ fn limit_variable_string_length(value: String) -> String {
     let mut array_tmp = [0u8; 20];
     array_tmp[..value.len()].copy_from_slice(value.as_bytes());
     // convert the array of bytes to a string and return it
-    array_tmp.iter().map(|&i| char::from(i)).collect::<String>()
+    array_tmp.iter().map(|&i| char::from(i)).collect::<String>().replace('\x00', "1")
 }
 
 fn hash_uid(uid: Uuid) -> String {
